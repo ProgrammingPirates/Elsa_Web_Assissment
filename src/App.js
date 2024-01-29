@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/Login';
+import Home from './components/Home';
+import ProductPage from './components/ProductPage';
+import SlotSelection from './components/SlotSelection';
+import OrderSuccess from './components/OrderSuccess';
+const App = () => {
+  const [user, setUser] = useState(null);
 
-function App() {
+  const handleLogin = (userData) => {
+    setUser(userData);
+  };
+
+  const handleOrderComplete = () => {
+    console.log('Order completed');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login onLogin={handleLogin} />} />
+        <Route
+          path="/home"
+          element={user ? <Home /> : <Login onLogin={handleLogin} />}
+        />
+        <Route
+          path="/product"
+          element={user ? <ProductPage /> : <Login onLogin={handleLogin} />}
+        />
+        <Route
+          path="/slot-selection"
+          element={
+            user ? (
+              <SlotSelection onOrderComplete={handleOrderComplete} />
+            ) : (
+              <Login onLogin={handleLogin} />
+            )
+          }
+        />
+        <Route
+          path="/order-success"
+          element={
+            user ? (
+              <OrderSuccess />
+            ) : (
+              <Login onLogin={handleLogin} />
+            )
+          }
+        />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

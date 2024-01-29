@@ -1,0 +1,82 @@
+.product-page-container {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+}
+
+.product-page-container h2 {
+    font-size: 24px;
+    color: #444;
+}
+
+.product-page-container p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.packages-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.package-card {
+    width: 30%;
+    border: 1px solid #ddd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.package-card h4 {
+    font-size: 20px;
+    color: #333;
+}
+
+.price-container {
+    display: flex;
+    align-items: baseline;
+    margin: 20px 0;
+}
+
+.discounted-price {
+    font-size: 24px;
+    color: #444;
+}
+
+.original-price {
+    font-size: 16px;
+    color: #888;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+
+.package-card button {
+    background-color: #FF0000;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.additional-benefits {
+    margin-top: 40px;
+}
+
+.additional-benefits p {
+    font-size: 18px;
+    color: #444;
+}
+
+.additional-benefits ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.additional-benefits li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+}
