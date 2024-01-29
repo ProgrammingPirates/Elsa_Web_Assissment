@@ -1,20 +1,38 @@
 /* Container styling */
 .login-container {
+  position: relative;
+  /* border: 1px solid black; */
     max-width: 500px;
-    margin: auto;
-    background-color: #f0f0f0;
+    margin: 20vh auto;
+    background-color: white;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .flower-img{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
   }
   
   /* Header styling */
   .login-container h2 {
-    font-size: 24px;
+    font-size: 28px;
     text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   }
   
   /* Input field styling */
-  .login-container input[type=text], .login-container input[type=password] {
+  .login-container input[type=text]{
+    width: calc(100% - 20px);
+    padding:10px 10px 10px 23px; 
+    margin-bottom:20px; 
+    border-radius :5px; 
+    border :1px solid #ccc;
+  }
+  .login-container input[type=password] {
       width: calc(100% - 20px);
       padding:10px; 
       margin-bottom:20px; 
@@ -25,7 +43,7 @@
   /* Button Styling */
   .login-container button {
       padding :10px ; 
-      background-color:#ff6b81; 
+      background-color:#d1132f; 
       color:white ; 
       border:none ;  
       cursor:pointer ;
@@ -33,7 +51,7 @@
   
   /* Send OTP button styling */
   .login-container .send-otp-btn {
-    background-color: pink;
+    background-color: #d1132f;
     margin-right: 10px;
   }
   
@@ -45,7 +63,8 @@
   /* Checkbox and label styling */
   .login-container p {
      color :#888; 
-     line-height :20px
+     font-size: 13px;
+     line-height :20px;
   }
   
   .login-container p a {
@@ -54,14 +73,20 @@
   
 
 .country-code-container {
+  position: relative;
     display: flex;
     align-items: center;
     margin-bottom: 15px;
   }
+
+ 
   
-  .flag-icon {
+  .flag{
+    position: absolute;
     width: 24px; 
     height: 16px;
+    top: 10px;
+    left: 4px;
     margin-right: 8px;
   }
   

@@ -1,12 +1,23 @@
 .slot-selection-container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 0 5vw;
   }
   
+  .slot-img{
+  
+    width: 90vw;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  .slot-img img{
+    width: 90vw; 
+  }
+
   .program-info {
     margin-bottom: 20px;
   }
+
   
   .selection-section {
     display: flex;
@@ -16,12 +27,15 @@
   
   .selection-section label {
     margin-bottom: 5px;
+    border-radius: 8px;
   }
   
   .selection-section select {
+    border-radius: 8px;
     padding: 8px;
     margin-bottom: 10px;
   }
+
   
   button {
     padding: 10px;

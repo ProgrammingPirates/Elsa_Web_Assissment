@@ -1,7 +1,18 @@
 .product-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-family: Arial, sans-serif;
     color: #333;
-    padding: 20px;
+    padding: 0px 20px;
+    height: 100vh;
+    gap: 30px;
+    background-color: white;
+}
+
+.product-img{
+    margin: 10px;
+    border-radius: 10px;
 }
 
 .product-page-container h2 {
@@ -15,16 +26,28 @@
     line-height: 1.5;
 }
 
+.left-container,.right-container{
+    margin: 0px 10px;
+    flex: 1 1 0;
+}
+
+
 .packages-container {
     display: flex;
+    flex-direction: column;
+    gap: 1vh;
     justify-content: space-between;
     margin-top: 20px;
 }
 
 .package-card {
-    width: 30%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     border: 1px solid #ddd;
-    padding: 20px;
+    padding: 5px 30px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 

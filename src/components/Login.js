@@ -3,6 +3,7 @@ import './Login.css';
 import { useNavigate } from 'react-router-dom';
 import CountryFlag from 'react-country-flag';
 import { authenticateUser } from '../api'; 
+import flower from '../images/flowers.png'
 
 const Login = ({ onLogin }) => {
   const [emailOrPhone, setEmailOrPhone] = useState('');
@@ -32,10 +33,11 @@ const Login = ({ onLogin }) => {
 
   return (
     <div className="login-container">
-      <h2>Login</h2>
+    <img className="flower-img" src={flower} alt="" />
+      <h2>Login to your account</h2>
       <div className="country-code-container">
         {/* Add the CountryFlag component */}
-        <CountryFlag countryCode={selectedCountry} svg />
+        <CountryFlag className="flag" countryCode={selectedCountry} svg />
 
         {/* Input for Email or Phone */}
         <input
