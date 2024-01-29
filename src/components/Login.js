@@ -12,7 +12,7 @@ const Login = ({ onLogin }) => {
   const [selectedCountry, setSelectedCountry] = useState('IN'); 
   const [agreeTerms, setAgreeTerms] = useState(false);
   const navigate = useNavigate();
-  const staticOTP = '123456';
+  const staticOTP = '0';
   const handleSendOTP = () => {
     console.log('Sending OTP...');
     setIsOtpSent(true);
@@ -56,17 +56,6 @@ const Login = ({ onLogin }) => {
         onChange={(e) => setOtp(e.target.value)}
       />
       <br />
-      
-      {/* Send OTP Button */}
-      <button className="send-otp-btn" onClick={handleSendOTP} disabled={isOtpSent}>
-        {isOtpSent ? 'OTP Sent' : 'Send OTP'}
-      </button>
-      
-      {/* Login Button */}
-      <button className="login-btn" onClick={handleLogin} disabled={!isOtpSent || !agreeTerms}>
-        Login
-      </button>
-      
       <p>
         <label>
           <input
@@ -81,6 +70,16 @@ const Login = ({ onLogin }) => {
           of Elda Health.
         </label>
       </p>
+      {/* Send OTP Button */}
+      <button className="send-otp-btn" onClick={handleSendOTP} disabled={isOtpSent}>
+        {isOtpSent ? 'OTP Sent' : 'Send OTP'}
+      </button>
+      
+      {/* Login Button */}
+      
+      <button className="login-btn" onClick={handleLogin} disabled={!isOtpSent || !agreeTerms}>
+        Login
+      </button>
     </div>
   );
 };

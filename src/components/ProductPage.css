@@ -64,7 +64,7 @@
 
 .discounted-price {
     font-size: 24px;
-    color: #444;
+    color: #0336ff;
 }
 
 .original-price {
@@ -74,8 +74,9 @@
     margin-left: 10px;
 }
 
+
 .package-card button {
-    background-color: #FF0000;
+    background-color: #f89306;
     color: #FFFFFF;
     padding: 10px 20px;
     border: none;

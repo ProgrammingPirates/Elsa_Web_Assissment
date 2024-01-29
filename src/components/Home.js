@@ -1,7 +1,9 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 import './Home.css';
-import img from '../images/circle.jpg'
+import img from '../images/1.jpg'
+import imge from '../images/2.jpg'
+import imgee from '../images/3.jpg'
 
 const Home = () => {
   const navigate = useNavigate();
@@ -35,19 +37,21 @@ const Home = () => {
      <div className="home-top">
      <div className="home-block">
       <h2>Yoga for Mind</h2>
-      <p>Watch Our Lead Yoga Therapist, Ms Uma Subramaniam explain Yoga for Mind</p>
+      <p>Watch Our Lead Yoga Therapist, Ms Uma Subramaniam <a href="https://example.com">Ms Uma Subramaniam</a> explain Yoga for Mind</p>
       </div>
       {/* Video Section */}
-      <div className="video-section">
+      <div class="video-section">
         <iframe
           width="560"
           height="315"
-          src="https://www.youtube.com/embed/your_youtube_video_id"
+          src="https://www.youtube.com/embed/FdyhENXyIQ4?autoplay=1&mute=1"
           title="Yoga for Mind Video"
-          frameBorder="0"
-          allowFullScreen
+          frameborder="0"
+          allowfullscreen
         ></iframe>
       </div>
+
+
       </div>
 
       {/* Program Information */}
@@ -61,20 +65,20 @@ const Home = () => {
         <img className="home-img" src={img} alt="" />
         <p className="a">Hard to feel calm or slepp because of stress</p>
         <button className="book-trial-btn" onClick={handleBookTrial}>
-          Book Trial @99
+          Book Trial @ 99
         </button>
         </div>
         <div className="last-card">
-        <img className="home-img" src={img} alt="" />
+        <img className="home-img" src={imge} alt="" />
         <p className="a">If you have palpitations and breathing trouble</p>
         <button className="buy-package-btn" onClick={handleBuyPackage}>
           I want to buy
         </button>
         </div>
         <div className="last-card">
-        <img className="home-img" src={img} alt="" />
+        <img className="home-img" src={imgee} alt="" />
         <p className="a">You have been advised by doctors to avoid physical activity</p>
-        <p className="a">I Have a question</p>
+        <p className="a"><a href=''>I Have a question</a></p>
         </div>
       </div>
     </div>

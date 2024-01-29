@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SlotSelection.css'; // Import the CSS file for styling
-import banner from '../images/banner.jpg'
+import banner from '../images/banner.jpg';
 
 const SlotSelection = () => {
   const [selectedBatch, setSelectedBatch] = useState('');
@@ -16,7 +16,7 @@ const SlotSelection = () => {
   return (
     <div className="slot-selection-container">
       <h2>Yoga for Mind - Yoga Batch & Slot</h2>
-      <div  className="slot-img" > <img src={banner} alt="" /> </div>
+      <div className="slot-img"> <img src={banner} alt="" /> </div>
       <div className="program-info">
         <p>
           <h2><strong>What is Yoga for Mind?</strong></h2>

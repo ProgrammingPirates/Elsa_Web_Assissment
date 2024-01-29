@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Login from './components/Login';
 import Home from './components/Home';
 import ProductPage from './components/ProductPage';
 import SlotSelection from './components/SlotSelection';
 import OrderSuccess from './components/OrderSuccess';
+import YogaForMind from './components/YogaForMind';
+
 const App = () => {
   const [user, setUser] = useState(null);
 
@@ -13,7 +15,7 @@ const App = () => {
   };
 
   const handleOrderComplete = () => {
-    console.log('Order completed');
+    console.log('Order completed!');
   };
 
   return (
@@ -27,6 +29,10 @@ const App = () => {
         <Route
           path="/product"
           element={user ? <ProductPage /> : <Login onLogin={handleLogin} />}
+        />
+       <Route
+          path="/yoga-for-mind"
+          element={user ? <YogaForMind /> : <Login onLogin={handleLogin} />}
         />
         <Route
           path="/slot-selection"
