@@ -1,4 +1,3 @@
-// src/components/YogaForMind.js
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SlotSelection from './SlotSelection';
@@ -9,7 +8,6 @@ const YogaForMind = () => {
   const [selectedTimeSlot, setSelectedTimeSlot] = useState('');
 
   const handleBuyPackage = () => {
-    // Add logic for buying the package
     console.log('Buying the Yoga for Mind package');
   };
 
@@ -53,7 +51,8 @@ const YogaForMind = () => {
         >
           <option value="">Select Time Slot</option>
           <option value="5:00 PM-5:40 PM">5:00 PM - 5:40 PM (Tue, Wed, Thu)</option>
-          {/* Add more time slot options as needed */}
+          {/* Add the new time slot option as requested */}
+          <option value="8:00 AM-8:40 AM">8:00 AM - 8:40 AM (Mon, Tue, Wed, Thu, Fri)</option>
         </select>
 
         {/* Link to SlotSelection with query parameter */}

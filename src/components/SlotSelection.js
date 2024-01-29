@@ -1,7 +1,6 @@
-// src/components/SlotSelection.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './SlotSelection.css'; // Import the CSS file for styling
+import './SlotSelection.css';
 import banner from '../images/banner.jpg';
 
 const SlotSelection = () => {
@@ -54,14 +53,13 @@ const SlotSelection = () => {
         >
           <option value="">Select Slot</option>
           <option value="4:00 PM">4:00 PM</option>
-          {/* Add more slot options as needed */}
+          {/* Add the new time slot option as requested */}
+          <option value="8:00 AM-8:40 AM">8:00 AM - 8:40 AM (Mon, Tue, Wed, Thu, Fri)</option>
         </select>
       </div>
 
       {/* Place Order Button */}
       <button onClick={handlePlaceOrder}>Place Order</button>
-
-      {/* No Payment UI, flows required, as mentioned */}
     </div>
   );
 };
