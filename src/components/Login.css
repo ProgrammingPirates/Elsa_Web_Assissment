@@ -1,0 +1,67 @@
+/* Container styling */
+.login-container {
+    max-width: 500px;
+    margin: auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  /* Header styling */
+  .login-container h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Input field styling */
+  .login-container input[type=text], .login-container input[type=password] {
+      width: calc(100% - 20px);
+      padding:10px; 
+      margin-bottom:20px; 
+      border-radius :5px; 
+      border :1px solid #ccc
+  }
+  
+  /* Button Styling */
+  .login-container button {
+      padding :10px ; 
+      background-color:#ff6b81; 
+      color:white ; 
+      border:none ;  
+      cursor:pointer ;
+  }
+  
+  /* Send OTP button styling */
+  .login-container .send-otp-btn {
+    background-color: pink;
+    margin-right: 10px;
+  }
+  
+  /* Login button styling */
+  .login-container .login-btn {
+    background-color: #4CAF50;
+  }
+  
+  /* Checkbox and label styling */
+  .login-container p {
+     color :#888; 
+     line-height :20px
+  }
+  
+  .login-container p a {
+    color: blue;
+  }
+  
+
+.country-code-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .flag-icon {
+    width: 24px; 
+    height: 16px;
+    margin-right: 8px;
+  }
+  

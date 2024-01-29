@@ -1,0 +1,20 @@
+.order-success-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .order-success-container h2 {
+    color: #4CAF50;
+  }
+  
+  .order-success-container p {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
